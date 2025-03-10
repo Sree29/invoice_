@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .invoice-container {
+            background: white;
+            padding: 20px;
+            width: 60%;
+            margin: 40px auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0096d6;
+        }
+        .date-box {
+            background: #ddd;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .section {
+            margin-top: 20px;
+            border-top: 2px solid black;
+            padding-top: 10px;
+        }
+        .section-header {
+            background: #ddd;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .table th, .table td {
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .table th {
+            background: #ddd;
+            text-align: left;
+        }
+        .table td {
+            vertical-align: top;
+        }
+        /* Terms, Pricing, and Footer */
+        .terms {
+            margin-top: 30px;
+            padding: 10px;
+        }
+        .terms h3 {
+            font-weight: bold;
+        }
+        .table-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        .pricing-table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        .pricing-table th {
+            background-color: #0087a7;
+            color: white;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #eaeaea;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .contact-info {
+            max-width: 50%;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .thank-you {
+            font-weight: bold;
+            color: #007d99;
+        }
+        .company-info {
+            text-align: right;
+        }
+        .company-info h2 {
+            margin: 0;
+            color: #2c5282;
+        }
+        .company-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invoice-container">
+    <div class="header">
+        <div>INVOICE</div>
+        <div class="date-box">11/02/2025</div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">CUSTOMER DETAILS</div>
+        <div class="details">
+            <div>LITADZMEDIA PRIVATE LIMITED</div>
+            <div>
+                <div class="bold">VALID UNTIL</div>
+                11/03/2025
+            </div>
+            <div>
+                <div class="bold">INVOICE NUMBER</div>
+                CTZ205
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <table class="table">
+            <tr>
+                <th>DESCRIPTION</th>
+                <th>PRICE</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="bold">Casting for Cochin international airport</a><br>
+                    <a href="#" class="bold">Model - Bincymol Biju</a>
+                </td>
+                <td>10,000/-</td>
+            </tr>
+            <tr>
+                <td>Travel allowance</td>
+                <td>1,500/-</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="terms">
+        <h3>Terms and conditions</h3>
+        <p>&bull; No returns will be accepted after 15 days</p>
+    </div>
+
+    <div class="table-container">
+        <table class="pricing-table">
+            <tr>
+                <th>TOTAL</th>
+                <td>11,500</td>
+            </tr>
+            <tr>
+                <th>TAX</th>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td>INR 11,500/-</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="contact-info">
+        <p>If you have any questions concerning this invoice, please contact Santo at</p>
+        <p>Email: <a href="mailto:info@cognetz.com">info@cognetz.com</a></p>
+        <p>Phone: +97 1562343376</p>
+        <p class="thank-you">Thank you for your business!</p>
+    </div>
+    <div class="company-info">
+        <h2>cognetz</h2>
+        <p>Dubai & Kerala</p>
+        <p>+971562343376</p>
+        <p>+91 9961997353</p>
+        <p><a href="http://www.cognetz.com">www.cognetz.com</a></p>
+    </div>
+</div>
+
+</body>
+</html>
