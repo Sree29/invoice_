@@ -86,13 +86,13 @@
 										<input type="hidden" />
 										<!--end::Hidden input-->
 										<!--begin::Icon-->
-										<i class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5">
+										<!-- <i class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5">
 											<span class="path1"></span>
 											<span class="path2"></span>
-										</i>
+										</i> -->
 										<!--end::Icon-->
 										<!--begin::Input-->
-										<input type="text" class="search-input form-control form-control border-0 h-lg-40px ps-13" name="search" value="" placeholder="Search..." data-kt-search-element="input" />
+										<!-- <input type="text" class="search-input form-control form-control border-0 h-lg-40px ps-13" name="search" value="" placeholder="Search..." data-kt-search-element="input" /> -->
 										<!--end::Input-->
 										<!--begin::Spinner-->
 										<span class="search-spinner position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
@@ -550,11 +550,11 @@
 											<div class="card-title">
 												<!--begin::Search-->
 												<div class="d-flex align-items-center position-relative my-1">
-													<i class="ki-duotone ki-magnifier fs-3 position-absolute ms-5">
+													<!-- <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-5">
 														<span class="path1"></span>
 														<span class="path2"></span>
-													</i>
-													<input type="text" data-kt-subscription-table-filter="search" class="form-control form-control-solid w-250px ps-12" placeholder="Search Invoice" />
+													</i> -->
+													<!-- <input type="text" data-kt-subscription-table-filter="search" class="form-control form-control-solid w-250px ps-12" placeholder="Search Invoice" /> -->
 												</div>
 												<!--end::Search-->
 											</div>
@@ -678,49 +678,144 @@
 													<tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
 														<th class="w-10px pe-2">
 															<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
-																<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_subscriptions_table .form-check-input" value="1" />
+																<input class="form-check-input" type="checkbox" data-kt-check="true"
+																	data-kt-check-target="#kt_subscriptions_table .form-check-input" value="1" />
 															</div>
 														</th>
-														<th class="min-w-125px">
-															Invoice Number</th>
+														<th class="min-w-125px">Invoice Number</th>
 														<th class="min-w-125px">Sales/Purchase</th>
-														
 														<th class="min-w-125px">Supplier Name</th>
-														<th class="min-w-125px">Business Name(Supplier)</th>
-														<th class="min-w-125px">Contact Number(Supplier)	</th>
-														<th class="min-w-125px">Address(Supplier)</th>
-														<th class="text-end min-w-70px">Email(Supplier)</th>
-														
-														<th class="text-end min-w-70px">GST Number(Supplier)</th>
-														
-														<th class="text-end min-w-70px">Other Details(Supplier)</th>
-														
-														<th class="text-end min-w-70px">Client Name</th>
-														<th class="text-end min-w-70px">Business Name(Client)</th>
-														<th class="text-end min-w-70px">Contact Number(Client)</th>
-														<th class="text-end min-w-70px">Address(Client)</th>
-														<th class="text-end min-w-70px">Email(Client)</th>
-														<th class="text-end min-w-70px">GST Number(Client)</th>
-														<th class="text-end min-w-70px">Other Details(Client)</th>
-														<th class="text-end min-w-70px">Invoice Date</th>
-														<th class="text-end min-w-70px">Payment Terms</th>
-														<th class="text-end min-w-70px">Valid Until</th>
-														<th class="text-end min-w-70px">PO Number</th>
-														<th class="text-end min-w-70px">Description</th>
-														<th class="text-end min-w-70px">Price</th>
-														<th class="text-end min-w-70px">Travel Alolowance</th>
-														<th class="text-end min-w-70px">Sub Total</th>
-														<th class="text-end min-w-70px">Notes</th>
-														<th class="text-end min-w-70px">Terms</th>
-														<th class="text-end min-w-70px">Discount</th>
-														<th class="text-end min-w-70px">Tax</th>
-														<th class="text-end min-w-70px">Total</th>
-														<th class="text-end min-w-70px">Amount Paid</th>
-														<th class="text-end min-w-70px">Balance Amount</th>
+														<th class="min-w-125px">Business Name (Supplier)</th>
+														<th class="min-w-125px">Contact Number (Supplier)</th>
+														<th class="min-w-125px">Address (Supplier)</th>
+														<th class="min-w-125px">Email (Supplier)</th>
+														<th class="min-w-125px">GST Number (Supplier)</th>
+														<th class="min-w-125px">Other Details (Supplier)</th>
+														<th class="min-w-125px">Client Name</th>
+														<th class="min-w-125px">Business Name (Client)</th>
+														<th class="min-w-125px">Contact Number (Client)</th>
+														<th class="min-w-125px">Address (Client)</th>
+														<th class="min-w-125px">Email (Client)</th>
+														<th class="min-w-125px">GST Number (Client)</th>
+														<th class="min-w-125px">Other Details (Client)</th>
+														<th class="min-w-125px">Invoice Date</th>
+														<th class="min-w-125px">Payment Terms</th>
+														<th class="min-w-125px">Valid Until</th>
+														<th class="min-w-125px">PO Number</th>
+														<th class="min-w-125px">Description</th>
+														<th class="min-w-125px">Price</th>
+														<th class="min-w-125px">Travel Allowance</th>
+														<th class="min-w-125px">Sub Total</th>
+														<th class="min-w-125px">Notes</th>
+														<th class="min-w-125px">Terms</th>
+														<th class="min-w-125px">Discount</th>
+														<th class="min-w-125px">Tax</th>
+														<th class="min-w-125px">Total</th>
+														<th class="min-w-125px">Amount Paid</th>
+														<th class="min-w-125px">Balance Amount</th>
+														<th class="min-w-100px text-end">Actions</th>
 													</tr>
 												</thead>
-												
+												<tbody>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>INV-001</td>
+														<td>Sales</td>
+														<td>John Doe</td>
+														<td>ABC Traders</td>
+														<td>+1234567890</td>
+														<td>123 Main St</td>
+														<td>john@example.com</td>
+														<td>GST12345</td>
+														<td>None</td>
+														<td>Jane Smith</td>
+														<td>XYZ Pvt Ltd</td>
+														<td>+9876543210</td>
+														<td>456 Park Ave</td>
+														<td>jane@example.com</td>
+														<td>GST67890</td>
+														<td>None</td>
+														<td>2025-03-01</td>
+														<td>Net 30</td>
+														<td>2025-04-01</td>
+														<td>PO123</td>
+														<td>Product Sale</td>
+														<td>$500</td>
+														<td>$50</td>
+														<td>$550</td>
+														<td>No notes</td>
+														<td>Standard Terms</td>
+														<td>$20</td>
+														<td>$50</td>
+														<td>$580</td>
+														<td>$300</td>
+														<td>$280</td>
+														<td class="text-end">
+															<button class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#invoiceModal"
+																style="padding: 4px 8px;">
+																<i class="fas fa-edit fa-sm"></i>
+															</button>
+															<button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal"
+																style="padding: 4px 8px;">
+																<i class="fas fa-trash fa-sm"></i>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+																<input class="form-check-input" type="checkbox" value="2" />
+															</div>
+														</td>
+														<td>INV-002</td>
+														<td>Purchase</td>
+														<td>Mike Johnson</td>
+														<td>LMN Suppliers</td>
+														<td>+1122334455</td>
+														<td>789 Market St</td>
+														<td>mike@example.com</td>
+														<td>GST54321</td>
+														<td>Urgent</td>
+														<td>Alice Brown</td>
+														<td>PQR Enterprises</td>
+														<td>+5566778899</td>
+														<td>101 Industrial Rd</td>
+														<td>alice@example.com</td>
+														<td>GST98765</td>
+														<td>Urgent Order</td>
+														<td>2025-03-05</td>
+														<td>Net 45</td>
+														<td>2025-05-01</td>
+														<td>PO789</td>
+														<td>Raw Materials</td>
+														<td>$800</td>
+														<td>$100</td>
+														<td>$900</td>
+														<td>Fast delivery</td>
+														<td>Flexible Terms</td>
+														<td>$30</td>
+														<td>$80</td>
+														<td>$950</td>
+														<td>$500</td>
+														<td>$450</td>
+														<td class="text-end">
+															<button class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#invoiceModal"
+																style="padding: 4px 8px;">
+																<i class="fas fa-edit fa-sm"></i>
+															</button>
+															<button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal"
+																style="padding: 4px 8px;">
+																<i class="fas fa-trash fa-sm"></i>
+															</button>
+														</td>
+													</tr>
+												</tbody>
 											</table>
+											
 											<!--end::Table-->
 										</div>
 										<!--end::Card body-->
